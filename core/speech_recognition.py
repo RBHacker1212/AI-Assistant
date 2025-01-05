@@ -6,7 +6,7 @@ def listen_command():
     print("Listening for your command...")
     try:
       audio = recognizer.listen(source)
-      command = recognizer.recognize_google(audio)
+      command = recognizer.recognize_google(audio, lang='fa-IR')
       print(f"You: {command}")
       return command
     except sr.UnknownValueError:
