@@ -15,6 +15,7 @@ def main():
       elif "open" in command_lower:
         response = open_application(command_lower)
         speak(response)
+        print(f"Assistant: {response}")
       else:
         response = ask_openai(command)
         speak(response)
