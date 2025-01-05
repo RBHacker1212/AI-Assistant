@@ -4,13 +4,13 @@ openai.api_key = "YOUR-OPENAI-API-KEY"
 
 def ask_openai(prompt):
   try:
-    response = openai.Completion.create(
-      model = "gpt-4",
-      max_tokens=150,
-      n=1,
-      stop=None,
-      temprature=0.7
+    response = openai.ChatCompletion.create(
+        model = "gpt-4",
+        messages=[
+            {"role":"system","content":"You are a helpful assistant"},
+            {"role":"user","content":prompt}
+        ]
     )
-    return response.choices[0].text.strip()
+    return response['choices'][0]['message']['content']
   except Exception as e:
     return f"Error: {e}"
