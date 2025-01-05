@@ -13,5 +13,5 @@ def main():
       else:
         speak("I didn`t understand that. Could you repeat?")
 
-def __name__ == "__main__":
+if __name__ == "__main__":
   main()
