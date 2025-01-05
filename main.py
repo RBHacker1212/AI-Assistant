@@ -18,8 +18,8 @@ def main():
       else:
         response = ask_openai(command)
         speak(response)
-      else:
-        speak("I didn`t understand that. Could you repeat?")
+    else:
+      speak("I didn`t understand that. Could you repeat?")
 
 if __name__ == "__main__":
   main()
