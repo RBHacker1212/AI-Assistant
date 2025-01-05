@@ -1,4 +1,5 @@
-import os webbrowser
+import os 
+import webbrowser
 
 def open_application(app_name):
   try:
