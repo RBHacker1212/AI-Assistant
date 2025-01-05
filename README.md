@@ -12,3 +12,10 @@ AI-ASSISTANT is an intelligent virtual assistant inspired by AI system from the 
    ``` bash
    git clone https://github/RBHacker1212/AI-Assistant.git
    cd AI-Assistant
+2. Get a API-KEY from openai:
+   ```
+   /AI-ASSISTANT/
+   |---- core/
+   |     |----ai_engine.py
+   ```
+   openai.api_key = "ENTER_YOUR_API-KEY_HERE!"
