@@ -8,7 +8,7 @@ def listen_command():
       audio = recognizer.listen(source)
       command = recognizer.recognize_google(audio)
       print(f"You: {command}")
-      reeturn command
+      return command
     except sr.UnknownValueError:
       print("Sorry, I could not understand your voice.")
       return ""
